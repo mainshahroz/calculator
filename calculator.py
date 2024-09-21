@@ -1,3 +1,21 @@
+def add(a,b):
+    c= a+b
+    return c
+def subtract(a,b):
+    c= a-b
+    return c
+def multiply (a,b):
+    c= a*b
+    return c
+def divide(a,b):
+    c= a/b
+    return c
+
+
+
+
+
+
 
 print("enter the first number" )
 n1 = float(input())
@@ -10,14 +28,18 @@ sym =input()
 
 
 if sym == "+":
-    print(f"{n1}{sym}{n2}={n1+n2}")
+    number = add(n1,n2)
+    print(number)
 
 if sym == "-":
-    print(f"{n1}{sym}{n2}={n1-n2}")
+    number = subtract(n1,n2)
+    print(number)
 if sym == "*":
-     print(f"{n1}{sym}{n2}={n1*n2}")
+    number = multiply(n1,n2)
+    print(number)
 if sym == "/":
-    print(f"{n1}{sym}{n2}={n1/n2}")
+    number = divide(n1,n2)
+    print(number)
 
 
 
